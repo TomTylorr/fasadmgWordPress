@@ -1,59 +1,78 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package fasadmg
- */
-
-?>
-<!doctype html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Мебельные фасады МДФ эмаль">
+    <meta name="keywords" content="мебельные, фасады, мдф, фрезеровки, витрины, стёкла, элементы">
+    <title>Мебельные фасады МДФ эмаль</title>
+    <!--<link rel="stylesheet" href="assets/css/main.css">-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'fasadmg' ); ?></a>
+    <?php wp_body_open(); ?>
+    <div class="bg">
+        <header class="main-header">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$fasadmg_description = get_bloginfo( 'description', 'display' );
-			if ( $fasadmg_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $fasadmg_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+            <div class="main-header-top">
+                <h1 class="site-description">Мебельные фасады МДФ эмаль</h1>
+                <div class="main-header__button"><button class="main-header__button__link" type="button">Заказать звонок</button></div>
+            </div>
+    
+    <div class="main-header-top2">
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'fasadmg' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+        <a class="logo" href="#">
+            <img class="logo__image" src="<?php echo get_template_directory_uri(); ?> /assets/img/logo.svg" width="169" height="84" alt="Логотип ООО 'Монте-групп'">
+        </a>
+
+    <div class="header-info">
+        <p class="header-info__working-hours"><span class="bg--yellow">Время работы: 9.00 - 18.00</span></p>
+        <p class="header-info__number">+375 (44) 794-71-24</p>
+    </div>
+
+    
+    <ul class="header-user-block">
+        <li>
+            <a class="header-user-block__link" href="">
+            <span class="icon-login"></span>
+            Войти
+        </a>
+        </li>
+        
+        <li>
+            <a class="header-user-block__link" href="">
+            <span class="icon-logout"></span>
+            Выйти
+        </a>
+        </li>
+
+        <li>
+            <a class="header-user-block__link" href="">
+            <span class="icon-basket"></span>
+            Корзина
+        </a>
+        </li>
+    </ul>
+    
+    </div>
+    
+            <nav class="main-header-middle">
+                <ul class="nav-site">
+                    <li class="nav-site__item"><a class="nav-site__link" href="#">Главная</a></li>
+                    <li class="nav-site__item"><a class="nav-site__link" href="#">Каталог</a></li>
+                    <li class="nav-site__item"><a class="nav-site__link" href="#">О нас</a></li>
+                    <li class="nav-site__item"><a class="nav-site__link" href="#">Новости</a></li>
+                    <li class="nav-site__item"><a class="nav-site__link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="main-header-bottom">
+                <input class="search" type="text" placeholder="Я ищу ..."> 
+                <a class="search-icon" href="#">
+                    <h3 class="visually-hidden">Искать</h3>
+                </a>
+            </div>
+
+        </header>
+    </div>
