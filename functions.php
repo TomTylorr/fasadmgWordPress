@@ -8,6 +8,8 @@
  * @package fasadmg
  */
 require_once __DIR__ . '/Main_Header_Menu.php';
+require_once __DIR__ . '/Main_Footer_Menu.php';
+require_once __DIR__ . '/Category_Footer_Menu.php';
 
 // Получаю ссылки рубрик для вывода их на главной страницы
 $category_link_frezerovky = get_category_link(3);
@@ -61,6 +63,7 @@ if (!function_exists('fasadmg_setup')) :
                 array(
                     'main_header_menu' => esc_html__('Меню в шапке', 'fasadmg'),
                     'main_footer_menu' => esc_html__('Меню в подвале', 'fasadmg'),
+                    'category_footer_menu' => esc_html__('Меню категории в подвале', 'fasadmg'),
                 )
         );
 
@@ -196,11 +199,4 @@ if (defined('JETPACK__VERSION')) {
 }
 
 
-add_filter('nav_menu_css_class', 'special_nav_class', 10, 2);
 
-function special_nav_class($classes, $item) {
-    if (in_array('current-menu-item', $classes)) {
-        $classes[] = 'current';
-    }
-    return $classes;
-}

@@ -1,6 +1,6 @@
 <?php
 
-class Main_Header_Menu extends Walker_Nav_Menu {
+class Category_Footer_Menu extends Walker_Nav_Menu {
 
     public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
         if (isset($args->item_spacing) && 'discard' === $args->item_spacing) {
@@ -14,7 +14,7 @@ class Main_Header_Menu extends Walker_Nav_Menu {
 
         $classes = empty($item->classes) ? array() : (array) $item->classes;
         $classes[] = 'menu-item-' . $item->ID;
-        $classes[] = 'nav-site__item';
+        $classes[] = 'site-navigation-categories-bottom__item';
 //                if($item->current) $classes[] = 'active';
         /**
          * Filters the arguments for a single nav menu item.
@@ -114,7 +114,7 @@ class Main_Header_Menu extends Walker_Nav_Menu {
         $title = apply_filters('nav_menu_item_title', $title, $item, $args, $depth);
 
         $item_output = $args->before;
-        $item_output .= '<a' . $attributes . ' class="nav-site__link">';
+        $item_output .= '<a' . $attributes . ' class="site-navigation-categories-bottom__link">';
         $item_output .= $args->link_before . $title . $args->link_after;
         $item_output .= '</a>';
         $item_output .= $args->after;

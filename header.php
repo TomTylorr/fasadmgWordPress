@@ -65,7 +65,7 @@
                         'container_class' => 'main-header-middle',
                         'container_id' => '',
                         'menu_class' => 'nav-site',
-                        'walker' => new Fasadmg_Walker_Nav_Menu(),
+                        'walker' => new Main_Header_Menu(),
                     ]);
                     ?>
 
