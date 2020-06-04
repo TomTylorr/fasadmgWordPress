@@ -13,6 +13,7 @@
             <li class="site-navigation-main-bottom__item"><a class="site-navigation-main-bottom__link" href="#">Каталог</a></li>
             <li class="site-navigation-main-bottom__item"><a class="site-navigation-main-bottom__link" href="#">О нас</a></li>
             <li class="site-navigation-main-bottom__item"><a class="site-navigation-main-bottom__link" href="#">Новости</a></li>
+            <li class="site-navigation-main-bottom__item"><a class="site-navigation-main-bottom__link" href="contacts.html">Контакты</a></li>
         </ul>
     
         <ul class="site-navigation-categories-bottom">
@@ -20,6 +21,7 @@
             <li class="site-navigation-categories-bottom__item"><a class="site-navigation-categories-bottom__link" href="#">Витрины</a></li>
             <li class="site-navigation-categories-bottom__item"><a class="site-navigation-categories-bottom__link" href="#">Стёкла</a></li>
             <li class="site-navigation-categories-bottom__item"><a class="site-navigation-categories-bottom__link" href="#">Элементы</a></li>
+            
 
         </ul>
     

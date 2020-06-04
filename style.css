@@ -11,9 +11,8 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: fasadmg
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
- */
+*/
 
- 
 body {
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
@@ -21,48 +20,44 @@ body {
 
 ul {
     padding-left: 0;
-
+    list-style: none;
+    margin: 0;
 }
 
 .bg {
-    background-color:#f2f6f8;
+    background-color: #f2f6f8;
 }
 
 /* Служебные стили */
 
 .visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
-
-
 /* Конце служебных стилей */
-
-
-
 
 /* Начинаются стили шапки */
 
 .main-header {
-    height: 345px; 
-    width: 1177px; 
-    margin:0 auto;
-    display:flex;
+    height: 345px;
+    width: 1177px;
+    margin: 0 auto;
+    display: flex;
     flex-direction: column;
 }
 
 .site-description {
     width: 543px;
-    font-size:30px;
+    font-size: 30px;
     /* text-align: center; */
-    padding-left:350px;
+    padding-left: 350px;
 }
 
 .main-header-top {
@@ -73,8 +68,7 @@ ul {
     font-size: 30px;
 }
 
-
-.main-header__button{
+.main-header__button {
     align-self: center;
 }
 
@@ -84,7 +78,6 @@ ul {
     border-radius: 10px;
     padding: 5px 45px;
     border: 4px solid #737373;
-     
 }
 
 .main-header__button__link:hover {
@@ -93,22 +86,20 @@ ul {
 }
 
 .main-header__button__link:active {
-    background-color:#f2f6f8;
+    background-color: #f2f6f8;
     cursor: pointer;
 }
 
-
-.main-header-middle{
+.main-header-middle {
     background-color: #526481;
 }
 
 .nav-site {
-    list-style:none;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 0;
-    
 }
 
 .nav-site__link {
@@ -119,13 +110,15 @@ ul {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    
 }
 
 .nav-site__link:hover {
     background-color: #f2f6f8;
     color: black;
+}
 
+.current {
+    background-color: #58161a; 
 }
 
 .main-header-top2 {
@@ -137,7 +130,7 @@ ul {
 }
 
 .logo__image {
-    padding-left: 100px; 
+    padding-left: 100px;
 }
 
 .header-info {
@@ -149,7 +142,7 @@ ul {
 }
 
 .bg--yellow {
-    background-color:#fff59a;
+    background-color: #fff59a;
 }
 
 .header-info__number {
@@ -171,16 +164,16 @@ ul {
     flex-grow: 1;
     justify-content: center;
     align-items: flex-end;
-    list-style:none;
-    
+    list-style: none;
+    margin-bottom: 20px;
 }
 
-.header-user-block__link{
-padding-right: 40px;
-text-decoration-line: none;
-font-size: 16px;
-color: black;
-position: relative;
+.header-user-block__link {
+    padding-right: 40px;
+    text-decoration-line: none;
+    font-size: 16px;
+    color: black;
+    position: relative;
 }
 
 .header-user-block__link:hover {
@@ -189,7 +182,7 @@ position: relative;
 
 .icon-login {
     position: absolute;
-    background-image: url("http://fasadmgwordpress/wp-content/themes/fasadmg/assets/img/icons/login.svg");
+    background-image: url("assets/img/icons/login.svg");
     width: 38px;
     height: 38px;
     top: -42px;
@@ -198,7 +191,7 @@ position: relative;
 
 .icon-logout {
     position: absolute;
-    background-image: url("http://fasadmgwordpress/wp-content/themes/fasadmg/assets/img/icons/logout.svg");
+    background-image: url("assets/img/icons/logout.svg");
     width: 38px;
     height: 38px;
     top: -40px;
@@ -208,7 +201,7 @@ position: relative;
 
 .icon-basket {
     position: absolute;
-    background-image: url("http://fasadmgwordpress/wp-content/themes/fasadmg/assets/img/icons/basket.svg");
+    background-image: url("assets/img/icons/basket.svg");
     width: 38px;
     height: 38px;
     top: -40px;
@@ -220,23 +213,21 @@ position: relative;
     display: inline-block;
     width: 780px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 15px;
     padding-left: 50px;
     font-size: 16px;
     border: 1px solid #697588;
-    
-    
 }
 
 .search-icon::before {
-    content:"";
-    background-image:url("http://fasadmgwordpress/wp-content/themes/fasadmg/assets/img/icons/search.svg");
+    content: "";
+    background-image: url("assets/img/icons/search.svg");
     position: absolute;
     right: 190px;
-    top: 30px;
+    top: 35px;
     width: 28px;
     height: 28px;
     background-repeat: no-repeat;
@@ -244,21 +235,21 @@ position: relative;
 
 /* Закончились стили шапки */
 
-
 /* Начинаются стили контейнера */
+
 .container {
     width: 1170px;
     margin: 0 auto;
 }
 
-
 /* Стили 1 блога категорий и слайдера */
+
 .category {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 40px;
-    
+    margin-top: 30px;
 }
 
 .category__item {
@@ -267,12 +258,11 @@ position: relative;
     list-style: none;
     margin-bottom: 10px;
     position: relative;
-    
 }
 
 .category__item__title {
     position: absolute;
-    left:50%;
+    left: 50%;
     top: 50%;
     background-color: black;
     color: white;
@@ -300,42 +290,59 @@ position: relative;
     background-color: #f9f5f0;
     justify-content: space-between;
     height: 52px;
-    
+    margin-bottom: 30px;
 }
 
 .new-product__title {
-    margin:0;
+    margin: 0;
     align-self: center;
-    padding-left: 50px;
     text-transform: uppercase;
+    padding-left: 50px;
+}
+
+.new-product__title-product {
+    font-size:16px;
+
+}
+
+.new-product__link {
+    text-decoration-line: none;
+    color: black;
+}
+
+.new-product__link:hover {
+    text-decoration-line: underline;
 }
 
 .new-product__header__link {
-    margin:0;
+    margin: 0;
     align-self: center;
     width: 330px;
     text-align: center;
-    background-color:#ee3643;
+    background-color: #ee3643;
     line-height: 38px;
     color: white;
     margin-right: 50px;
     text-transform: uppercase;
     font-size: 14px;
     text-decoration-line: none;
-    
 }
 
 .new-product__img {
     max-height: 380px;
     max-width: 280px;
-    
 }
+
+.new-product__img:hover {
+    opacity: 0.5;
+}
+
 .new-product__img--container {
     min-height: 380px;
 }
 
 .new-product__header__link:hover {
-    background-color:#e00413;
+    background-color: #e00413;
 }
 
 .new-product__items {
@@ -347,31 +354,37 @@ position: relative;
     list-style: none;
     text-align: center;
     max-width: 280px;
-    
 }
+
+
 /* Конец стилей 1 блога категорий и слайдера */
 
 /* Блок новости */
+
+.news {
+    margin-bottom: 100px;
+}
+
 .news__header {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    background-color: #f9f5f0 ;
+    background-color: #f9f5f0;
     height: 52px;
 }
 
 .news__title {
-    margin:0;
+    margin: 0;
     align-self: center;
     padding-left: 50px;
     text-transform: uppercase;
 }
 
 .news__header__link {
-    margin:0;
+    margin: 0;
     align-self: center;
     width: 330px;
     text-align: center;
-    background-color:#ee3643;
+    background-color: #ee3643;
     line-height: 38px;
     color: white;
     margin-right: 50px;
@@ -381,7 +394,7 @@ position: relative;
 }
 
 .news__header__link:hover {
-    background-color:#e00413;
+    background-color: #e00413;
 }
 
 .news__items {
@@ -398,21 +411,35 @@ position: relative;
 
 .news__item__img--container {
     min-height: 246px;
-    
 }
 
 .news__item__img {
     align-self: center;
-    max-height:250px;
+    max-height: 250px;
+
+}
+
+.news__item__img:hover {
+    opacity: 0.5;
 }
 
 .news__item__time {
-    background-color:#fff59a;
+    background-color: #fff59a;
     font-size: 18px;
     text-align: center;
-    padding-top:5px;
+    padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.news__item__link {
+    color: black;
+    text-decoration-line: none;
+}
+
+.news__item__link:hover {
+    text-decoration-line: underline;
+}
+
 
 .news__item__title {
     font-size: 16px;
@@ -434,21 +461,19 @@ position: relative;
     color: white;
     font-size: 14px;
     display: flex;
-    padding-top:15px;
+    padding-top: 15px;
     padding-bottom: 15px;
-
 }
 
 .registration {
     text-align: center;
     font-size: 12px;
-    flex-grow:1;
+    flex-grow: 1;
 }
 
 .registration__text {
     line-height: 20px;
 }
-
 
 .right-reserved {
     width: 308px;
@@ -464,11 +489,10 @@ position: relative;
 .developed-be__name {
     line-height: 32px;
     text-decoration-line: none;
-    
 }
 
 .developed-be__name:visited {
-    color:white;
+    color: white;
 }
 
 .developed-be__name:hover {
@@ -483,7 +507,7 @@ position: relative;
     display: flex;
     width: 1170px;
     margin: 0 auto;
-    padding-top:40px;
+    padding-top: 40px;
 }
 
 .footer-logo {
@@ -506,13 +530,13 @@ position: relative;
     justify-content: center;
 }
 
-.site-navigation-main-bottom__link{
-   font-size: 16px;
-   color: white;
-   text-transform: uppercase;
-   text-decoration-line: none;
-   display: block;
-   padding: 10px 15px;
+.site-navigation-main-bottom__link {
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    display: block;
+    padding: 10px 15px;
 }
 
 .site-navigation-main-bottom__link:hover {
@@ -544,39 +568,40 @@ position: relative;
     justify-content: center;
     position: relative;
     min-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.social-networks__item{
+.social-networks__item {
     min-width: 80px;
     min-height: 30px;
 }
 
 .social-networks__vk::before {
-    content:"";
-    position:absolute;
-    background-image:url("http://fasadmgwordpress/wp-content/themes/fasadmg/assets/img/icons/vk.svg");
-    background-repeat:no-repeat;
+    content: "";
+    position: absolute;
+    background-image: url("assets/img/icons/vk.svg");
+    background-repeat: no-repeat;
     top: 6px;
     width: 37px;
     height: 21px;
 }
 
-
 .social-networks__facebook::before {
-    content:"";
-    position:absolute;
-    background-image:url("http://fasadmgwordpress/wp-content/themes/fasadmg/assets/img/icons/facebook.svg");
-    background-repeat:no-repeat;
+    content: "";
+    position: absolute;
+    background-image: url("assets/img/icons/facebook.svg");
+    background-repeat: no-repeat;
     width: 17px;
     left: 245px;
     height: 30px;
 }
 
 .social-networks__instagramm::before {
-    content:"";
-    position:absolute;
-    background-image:url("http://fasadmgwordpress/wp-content/themes/fasadmg/assets/img/icons/instagram.svg");
-    background-repeat:no-repeat;
+    content: "";
+    position: absolute;
+    background-image: url("assets/img/icons/instagram.svg");
+    background-repeat: no-repeat;
     top: 3px;
     width: 29px;
     height: 29px;
@@ -595,7 +620,6 @@ position: relative;
 
 .footer-feedback__title {
     text-align: center;
-    
 }
 
 .footer-feedback__mail {
@@ -605,9 +629,329 @@ position: relative;
 
 .footer-feedback__mail:visited {
     color: white;
-    
 }
 
 .footer-feedback__mail:hover {
     text-decoration-line: underline;
+}
+
+/* PAGE - НОВОСТИ */
+
+.news-page {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.news-page__container:first-child {
+    margin-right: 20px;
+}
+
+.news-page__container:last-child {
+    flex-grow: 1;
+    max-height: 390px;
+}
+
+.news-page__items {
+    list-style-type: none;
+}
+
+.news-page__item {
+    display: flex;
+    margin-bottom: 65px;
+    max-height: 390px;
+}
+
+.news-page__container-photo {
+    min-width: 570px;
+    height: 390px;
+    position: relative;
+}
+
+.news__header {
+    margin-bottom: 30px;
+}
+
+.new-page__photo {
+    max-width: 570px;
+}
+
+.new-page__item-link {}
+
+.new-page__time {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 20px;
+    background-color: #fff59a;
+    font-size: 24px;
+    color: black;
+}
+
+.news-page__title {
+    margin: 0;
+    text-align: center;
+}
+
+.news-page__title-link {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+.news-page__title-link:hover {
+    color: blue;
+}
+
+.text-wrapper {
+    max-width: 630px;
+    max-height: 290px;
+}
+
+.news-page__container p {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.news-page__text {
+    font-size: 16px;
+    text-indent: 1.5em;
+    text-overflow: ellipsis;
+}
+
+/* PAGE - НОВОСТИ КОНЕЦ */
+
+/* PAGE - О нашей компании */
+
+.news__header--center {
+    justify-content: center;
+}
+
+.about-us__title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.about-us__table {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border: 2px solid black;
+}
+
+.about-us__data {
+    width: 50%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.about-us__advantages-items {
+    list-style: none;
+}
+
+.about-us__advantages-text {
+    font-size: 16px;
+}
+
+.about-us__tagline {
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+/* PAGE - О нашей компании закончил */
+
+/* PAGE - Контакты */
+
+.contacts-page__header {
+    margin-bottom: 30px;
+}
+
+.contact-page__main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-page__container {
+    width: 360px;
+    text-align: center;
+}
+
+.contacts-page__title {
+    font-size: 18px;
+}
+
+.contacts-page__text {
+    font-size: 16px;
+}
+
+.contacts-page__reequisites {
+    width: 460px;
+}
+
+.contact-page__main-container--margin {
+    margin-bottom: 80px;
+}
+
+.contacts-page__reequisites__title {
+    font-size: 18px;
+}
+
+.contacts-page__reequisites__text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* PAGE - Контакты конец*/
+
+/* PAGE - Каталог*/
+
+.catalog-page {
+    margin-top: 40px;
+}
+
+.catalog-page__filter {
+    width: 270px;
+    height: 800px;
+    border: 4px solid #f9f5f0;
+}
+
+.catalog-page-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.catalog-page__items {
+    width: 850px;
+}
+
+.catalog-page__lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog-page__item {
+    width: 265px;
+    margin-bottom: 40px;
+    height: 250px;
+}
+
+.catalog-page__filter__title {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.catalog-page__filter__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-page__filter__link {
+    text-decoration-line: none;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #f9f5f0;
+    text-align: center;
+    color: black;
+    border-right-width: 0;
+    border-left-width: 0;
+    display: block;
+}
+
+.catalog-page__filter__link:hover {
+    background-color: #f9f5f0;
+    border: 1px solid black;
+}
+
+.catalog-page__link {
+    display: flex;
+    position: relative;
+}
+
+.catalog-page__img {
+    max-height: 250px;
+    margin: 0 auto;
+}
+
+.catalog-page__img:hover {
+    opacity: 0.5;
+}
+
+.catalog-page__title {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #f9f5f0;
+    margin: 0;
+    font-size: 16px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.catalog-page__title:hover {
+    background-color: #fff59a;
+}
+
+/* PAGE - Каталог конец*/
+
+/* PAGE - Карточка конец*/
+
+.card-page {
+    width: 880px;
+    /* border:1px solid black; */
+    display: flex;
+}
+
+.card-page__container-img {
+    width: 400px;
+    /* border: 1px solid black; */
+    display: flex;
+
+}
+
+.card-page__img {
+    margin:auto;
+    max-height: 100%;
+    margin-top: 0;
+}
+
+.card-page__container-info {
+    margin-left: 10px;
+    /* border: 1px solid black; */
+    flex-grow: 1;
+}
+
+.card-page__title {
+    font-size: 24px;
+    text-align: center;
+    margin-top:0;
+}
+
+.card-page__text {
+    text-indent: 1.5em;
+    font-size: 16px;
+}
+
+.card-page__link {
+    text-transform: uppercase;
+    text-decoration-line: none;
+    color:white;
+    background-color: #ee3643;
+    padding: 10px 20px; 
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 40px;
+}
+
+.card-page__link:hover {
+    opacity: 0.8;
 }
