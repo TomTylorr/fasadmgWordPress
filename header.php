@@ -22,7 +22,7 @@
 
                 <div class="main-header-top2">
 
-                    <a class="logo" href="#">
+                    <a class="logo" href="<?php echo home_url();?>">
                         <img class="logo__image" src="<?php echo get_template_directory_uri(); ?> /assets/img/logo.svg" width="169" height="84" alt="Логотип ООО 'Монте-групп'">
                     </a>
 

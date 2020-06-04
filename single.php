@@ -6,35 +6,50 @@
  *
  * @package fasadmg
  */
-
 get_header();
 ?>
+<main class="container">
+    <div class="catalog-page">
+        <header class="news__header contacts-page__header news__header--center">
+            <h2 class="news__title news__title--center">          
+                ТОВАР:</h2>
+        </header>
+    </div>
 
-	<main id="primary" class="site-main">
+    <div class="catalog-page-container">
+        <aside class="catalog-page__filter">
+            <h3 class="catalog-page__filter__title">Категории товаров:</h3>
+            <ul class="catalog-page__filter__items">
+                <li class="catalog-page__filter__item"><a class="catalog-page__filter__link" href="<?php echo $category_link_frezerovky; ?>">Фрезеровки</a></li>
+                <li class="catalog-page__filter__item"><a class="catalog-page__filter__link" href="<?php echo $category_link_vitriny; ?>">Витрины</a></li>
+                <li class="catalog-page__filter__item"><a class="catalog-page__filter__link" href="<?php echo $category_link_glass; ?>">Стёкла</a></li>
+                <li class="catalog-page__filter__item"><a class="catalog-page__filter__link" href="<?php echo $category_link_elements; ?>">Элементы</a></li>
+            </ul>
+        </aside>
+        <section class="card-page">
+            <?php
+            if (have_posts()) {
+                while (have_posts()) {
+                    ?>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'fasadmg' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'fasadmg' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
+                    <?php the_post(); ?>
+                    <div class="card-page__container-img">
+                        <?php the_post_thumbnail('medium', array('class' => 'catalog-page__img')); ?>
+                    </div>
+                    <div class="card-page__container-info">
+                        <h3 class="card-page__title"><?php the_title(); ?></h3>
+                        <p class="card-page__text"><?php the_content(); ?></p>
+                        <a class="card-page__link" href="#">Заказать</a>
+                    </div>
+                <?php } ?> 
+                <?php
+            } else {
+                echo wpautop('Постов для вывода не найдено.');
+            }
+            ?>
+        </section>
+    </div>
+</main>
 
 <?php
-get_sidebar();
 get_footer();

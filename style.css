@@ -489,6 +489,7 @@ ul {
 .developed-be__name {
     line-height: 32px;
     text-decoration-line: none;
+    color: white;
 }
 
 .developed-be__name:visited {
@@ -625,10 +626,12 @@ ul {
 .footer-feedback__mail {
     text-decoration-line: none;
     line-height: 32px;
+    color: white;
 }
 
 .footer-feedback__mail:visited {
     color: white;
+    text-decoration-line: none;
 }
 
 .footer-feedback__mail:hover {
