@@ -341,7 +341,7 @@ ul {
 }
 
 .new-product__img {
-    max-height: 380px;
+    max-height: 340px;
     max-width: 280px;
 }
 
@@ -350,7 +350,7 @@ ul {
 }
 
 .new-product__img--container {
-    min-height: 380px;
+    min-height: 340px;
 }
 
 .new-product__header__link:hover {
@@ -359,7 +359,7 @@ ul {
 
 .new-product__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .new-product__item {
@@ -423,6 +423,11 @@ ul {
 
 .news__item__img--container {
     min-height: 246px;
+}
+
+.news__item__img_link {
+    display: flex;
+    justify-content: center;
 }
 
 .news__item__img {
