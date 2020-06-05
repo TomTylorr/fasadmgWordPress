@@ -17,6 +17,12 @@ $category_link_vitriny = get_category_link(4);
 $category_link_glass = get_category_link(5);
 $category_link_elements = get_category_link(6);
 
+// получаем ссылку на логотип
+$custom_logo__url = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' ); 
+
+
+
+
 if (!defined('_S_VERSION')) {
     // Replace the version number of the theme on each release.
     define('_S_VERSION', '1.0.0');

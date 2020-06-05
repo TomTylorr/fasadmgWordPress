@@ -41,9 +41,6 @@ get_header();
 
         </section>
 
-
-
-
 <section class="new-product">
     <header class="new-product__header">
             <h2 class="new-product__title">Новинки:</h2>

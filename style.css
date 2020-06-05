@@ -157,6 +157,7 @@ ul {
 .main-header-bottom {
     display: flex;
     position: relative;
+    justify-content: center;
 }
 
 .header-user-block {
@@ -210,9 +211,7 @@ ul {
 }
 
 .search {
-    display: inline-block;
     width: 780px;
-    margin: 0 auto;
     margin-top: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -222,7 +221,20 @@ ul {
     border: 1px solid #697588;
 }
 
-.search-icon::before {
+.search-icon {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    color: white;
+    background-color: #ee3643;;
+    Padding: 5px 20px;
+}
+.search-icon:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+/*.search-icon::before {
     content: "";
     background-image: url("assets/img/icons/search.svg");
     position: absolute;
@@ -231,7 +243,7 @@ ul {
     width: 28px;
     height: 28px;
     background-repeat: no-repeat;
-}
+}*/
 
 /* Закончились стили шапки */
 
@@ -836,6 +848,10 @@ ul {
     justify-content: space-between;
 }
 
+.catalog-page__lists:last-child{
+    margin-right: auto;
+}
+
 .catalog-page__item {
     width: 265px;
     margin-bottom: 40px;
@@ -874,10 +890,12 @@ ul {
 .catalog-page__link {
     display: flex;
     position: relative;
+    min-height: 250px;
 }
 
 .catalog-page__img {
     max-height: 250px;
+    max-width: 265px;
     margin: 0 auto;
 }
 
@@ -902,6 +920,36 @@ ul {
     background-color: #fff59a;
 }
 
+.navigation {
+    text-align:center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+
+    width: 50%;
+    margin: 0 auto;
+}
+
+.nav-links * {
+    padding: 5px 20px;
+    font-size: 16px;
+    color: black;
+    text-decoration-line: none;
+    border: 1px solid black;
+}
+
+.nav-links *:hover {
+    text-decoration-line: underline;
+    font-weight: bold;
+} 
+
+.nav-links>span.current {
+    background-color:#fff59a;
+}
+
+
 /* PAGE - Каталог конец*/
 
 /* PAGE - Карточка конец*/
@@ -913,7 +961,7 @@ ul {
 }
 
 .card-page__container-img {
-    width: 400px;
+    min-width: 400px;
     /* border: 1px solid black; */
     display: flex;
 
@@ -937,10 +985,14 @@ ul {
     margin-top:0;
 }
 
-.card-page__text {
+.card-page__container-info>p{
     text-indent: 1.5em;
     font-size: 16px;
 }
+/*.card-page__text {
+    text-indent: 1.5em;
+    font-size: 16px;
+}*/
 
 .card-page__link {
     text-transform: uppercase;

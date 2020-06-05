@@ -38,15 +38,16 @@ get_header();
                     </div>
                     <div class="card-page__container-info">
                         <h3 class="card-page__title"><?php the_title(); ?></h3>
-                        <p class="card-page__text"><?php the_content(); ?></p>
+                        <?php the_content(); ?>
                         <a class="card-page__link" href="#">Заказать</a>
                     </div>
                 <?php } ?> 
                 <?php
             } else {
-                echo wpautop('Постов для вывода не найдено.');
+                echo wpautop('Данный товар выведен из складской программы.');
             }
             ?>
+            
         </section>
     </div>
 </main>

@@ -39,67 +39,10 @@ get_header();
 </ul>
                 <?php
                 } else {
-                    echo wpautop('Постов для вывода не найдено.');
+                    echo wpautop('Данный товар выведен из складской программы.');
                 }
                 ?>
-            
-
-            <!--                
-                                <li class="catalog-page__item">
-                                    <a class="catalog-page__link" href="card.html">
-                                            <img class="catalog-page__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/catalog/frezerovky/1.jpg" alt=""> 
-                                            <h3 class="catalog-page__title">Майами</h3>                          
-                                        </a>
-                                </li>
-                                <li class="catalog-page__item">
-                                    <a class="catalog-page__link" href="card.html">
-                                        <img class="catalog-page__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/catalog/frezerovky/2.jpg" alt="">
-                                        <h3 class="catalog-page__title">Майами</h3>
-                                        </a>
-                                </li>
-                                <li class="catalog-page__item">
-                                    <a class="catalog-page__link" href="card.html">
-                                        <img class="catalog-page__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/catalog/frezerovky/3.jpg" alt="">
-                                        <h3 class="catalog-page__title">Майами</h3>
-                                        </a>
-                                </li>
-                                <li class="catalog-page__item">
-                                    <a class="catalog-page__link" href="card.html">
-                                        <img class="catalog-page__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/catalog/frezerovky/4.jpg" alt="">
-                                        <h3 class="catalog-page__title">Майами</h3>
-                                        </a>
-                                </li>
-                                <li class="catalog-page__item">
-                                    <a class="catalog-page__link" href="card.html">
-                                        <img class="catalog-page__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/catalog/frezerovky/1.jpg" alt="">
-                                        <h3 class="catalog-page__title">Майами</h3>
-                                        </a>
-                                </li>
-                                <li class="catalog-page__item">
-                                    <a class="catalog-page__link" href="card.html">
-                                        <img class="catalog-page__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/catalog/frezerovky/2.jpg" alt="">
-                                        <h3 class="catalog-page__title">Майами</h3>
-                                        </a>
-                                </li>
-                                <li class="catalog-page__item">
-                                    <a class="catalog-page__link" href="card.html">
-                                        <img class="catalog-page__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/catalog/frezerovky/3.jpg" alt="">
-                                        <h3 class="catalog-page__title">Майами</h3>
-                                        </a>
-                                </li>
-                                <li class="catalog-page__item">
-                                    <a class="catalog-page__link" href="card.html">
-                                        <img class="catalog-page__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/catalog/frezerovky/4.jpg" alt="">
-                                        <h3 class="catalog-page__title">Майами</h3>
-                                        </a>
-                                </li>
-                                <li class="catalog-page__item">
-                                    <a class="catalog-page__link" href="card.html">
-                                        <img class="catalog-page__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/catalog/frezerovky/1.jpg" alt="">
-                                        <h3 class="catalog-page__title">Майами</h3>
-                                        </a>
-                                </li>
-                            </ul>-->
+            <?php the_posts_pagination(); ?>
         </section>
     </div>
 </main>
