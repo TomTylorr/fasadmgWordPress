@@ -89,40 +89,6 @@ get_header();
             <h2 class="news__title">Новости:</h2>
             <a class="news__header__link" href="#">Все новости</a>
         </header>
-
-        <!--        <ul class="news__items">
-                    <li class="news__item">
-                        <div class="news__item__img--container">
-                            <a href="#"><img class="news__item__img" src="<?php echo get_template_directory_uri(); ?> /assets/img/news/image1.jpg" alt="Фото новости 1"></a>
-                        </div>
-        
-                        <time datetime="2020-09-23" class="news__item__time">25 мая 2020</time>
-                        <a class="news__item__link" href="#">
-                            <h3 class="news__item__title">Сегодня мы запустили новый...</h3>
-                        </a>
-        
-                    </li>
-                    <li class="news__item">
-                        <div class="news__item__img--container">
-                            <a href="#">
-        <img class="news__item__img" src="<?php echo get_template_directory_uri(); ?> /assets/img/news/image2.jpg" alt="Фото новости 2" width="380"></a>
-                        </div>
-                        <time datetime="2020-09-23" class="news__item__time">25 мая 2020</time>
-                        <a class="news__item__link" href="#">
-                            <h3 class="news__item__title">Сегодня мы запустили новый 2...</h3>
-                        </a>           
-                    </li>
-                    <li class="news__item">
-                        <div class="news__item__img--container">
-                            <a href="#"><img class="news__item__img" src="<?php echo get_template_directory_uri(); ?> /assets/img/news/image3.jpg" alt="Фото новости 3" width="380"></a>
-                        </div>
-                        <time datetime="2020-09-23" class="news__item__time">25 мая 2020</time>
-                        <a class="news__item__link" href="#">
-                            <h3 class="news__item__title">Сегодня мы запустили новый 3...</h3>
-                        </a>    
-                    </li>
-                </ul>-->
-
         <?php
 // параметры по умолчанию
         $posts = get_posts(array(
