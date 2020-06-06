@@ -83,16 +83,16 @@ get_header();
         </ul>
 <?php wp_reset_postdata(); // сброс   ?>
     </section>
-
+    
     <section class="news">
         <header class="news__header">
             <h2 class="news__title">Новости:</h2>
-            <a class="news__header__link" href="#">Все новости</a>
+            <a class="news__header__link" href="http://fasadmgwordpress/novosty/">Все новости</a>
         </header>
         <?php
 // параметры по умолчанию
         $posts = get_posts(array(
-            'numberposts' => 4,
+            'numberposts' => 3,
             'category' => 13,
             'orderby' => 'date',
             'order' => 'DESC',
@@ -112,12 +112,12 @@ get_header();
                 ?>
                 <li class="news__item">
                     <div class="news__item__img--container">
-                        <a class="news__item__img_link" href = "<?php the_permalink(); ?>">
+                        <a class="news__item__img_link" href = "http://fasadmgwordpress/novosty/">
     <?php the_post_thumbnail('medium', array('class' => 'news__item__img')); ?>
                             </a >
                     </div>
                             <time datetime="2020-09-23" class="news__item__time"><?php the_time( "j F Y" ); ?></time>
-                            <a class="news__item__link" href="#">
+                            <a class="news__item__link" href="http://fasadmgwordpress/novosty/">
                                 <h3 class="news__item__title"><?php the_title();?></h3>
                             </a>
                         

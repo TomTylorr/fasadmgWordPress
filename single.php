@@ -12,7 +12,7 @@ get_header();
     <div class="catalog-page">
         <header class="news__header contacts-page__header news__header--center">
             <h2 class="news__title news__title--center">          
-                ТОВАР:</h2>
+                <?php the_title()?></h2>
         </header>
     </div>
 

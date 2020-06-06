@@ -385,10 +385,14 @@ ul {
 }
 
 .news__title {
-    margin: 0;
     align-self: center;
     padding-left: 50px;
     text-transform: uppercase;
+    
+}
+
+.news__title--position {
+    margin: 0 auto;
 }
 
 .news__header__link {
@@ -411,7 +415,6 @@ ul {
 
 .news__items {
     display: flex;
-    justify-content: space-between;
 }
 
 .news__item {
@@ -419,6 +422,7 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .news__item__img--container {
@@ -662,6 +666,9 @@ ul {
     margin-bottom: 80px;
 }
 
+.news-page__container{
+    position:relative;
+}
 .news-page__container:first-child {
     margin-right: 20px;
 }
@@ -727,16 +734,36 @@ ul {
     max-height: 290px;
 }
 
-.news-page__container p {
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.news-page__text {
+.text-wrapper>p {
     font-size: 16px;
     text-indent: 1.5em;
-    text-overflow: ellipsis;
 }
+
+.news-page__more-link{
+    position: absolute;
+    bottom: 50%;
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    background-color: #ee3643;
+    color: white;
+    font-size: 16px;
+    text-decoration-line: none;
+}
+
+.news-page__more-link:hover{
+    background-color: red;
+}
+
+.news-page_line {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: red; /* Цвет линии для остальных браузеров */
+    background-color: #f9f5f0; /* Цвет линии для браузера Firefox и Opera */
+    height: 5px; /* Толщина линии */
+    margin-bottom: 100px;
+}
+
+
 
 /* PAGE - НОВОСТИ КОНЕЦ */
 
@@ -850,17 +877,13 @@ ul {
 .catalog-page__lists {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.catalog-page__lists:last-child{
-    margin-right: auto;
 }
 
 .catalog-page__item {
     width: 265px;
-    margin-bottom: 40px;
     height: 250px;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .catalog-page__filter__title {

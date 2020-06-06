@@ -1,20 +1,21 @@
 <?php
 get_header();
 /*
-  Template Name: Новости
+  Template Name: Шаблон страницы одиночной новости
+  Template Post Type: post, news
  */
 ?>
 <main class="container">
     <section class="news-page">
         <header class="news__header">
-            <h2 class="news__title news__title--position">Новости:</h2>
+            <h2 class="news__title news__title--position"><?php the_title();?></h2>
         </header>
-       
+        
         <?php
 // параметры по умолчанию
         $posts = get_posts(array(
-            'numberposts' => '',
-            'category' => 13,
+            'numberposts' => 1,
+            'category_name' => 'novosty',
             'orderby' => 'date',
             'order' => 'DESC',
             'include' => array(),
@@ -45,15 +46,13 @@ get_header();
                             </a>
                         </h3>
                         <div class="text-wrapper">
-                            <p class="news-page__text"><?php the_excerpt(); ?>
+                            <p class="news-page__text"><?php the_content(); ?>
 
                             </p>
                         </div>
-                        <a class="news-page__more-link" href="<?php the_permalink() ?>">Подробнее</a>
-
                     </div>
-                </li>
-                <hr class="news-page_line">
+                </li> 
+                
             <?php }
             ?>
 <?php the_posts_pagination(); ?>
@@ -67,4 +66,3 @@ get_header();
 
 <?php
 get_footer();
-
