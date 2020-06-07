@@ -102,10 +102,6 @@ ul {
     padding: 0;
 }
 
-.current-menu-item{
-    background-color: #ee3643;
-}
-
 .nav-site__link {
     display: block;
     padding: 15px 25px;
