@@ -289,12 +289,15 @@ ul {
     height: 390px;
 }
 
-.slider {
+/*Слайдер*/
+
+.carousel {
     width: 775px;
 }
 
 .new-product {
     margin-bottom: 100px;
+
 }
 
 .new-product__header {
@@ -388,7 +391,7 @@ ul {
     align-self: center;
     padding-left: 50px;
     text-transform: uppercase;
-    
+
 }
 
 .news__title--position {

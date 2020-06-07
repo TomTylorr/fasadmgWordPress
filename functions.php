@@ -18,7 +18,7 @@ $category_link_glass = get_category_link(5);
 $category_link_elements = get_category_link(6);
 
 // получаем ссылку на логотип
-$custom_logo__url = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' ); 
+$custom_logo__url = wp_get_attachment_image_src(get_theme_mod('custom_logo'), 'full');
 
 
 
@@ -166,9 +166,16 @@ add_action('widgets_init', 'fasadmg_widgets_init');
  */
 function fasadmg_scripts() {
     wp_enqueue_style('fasadmg-style', get_stylesheet_uri(), array(), _S_VERSION);
+    wp_enqueue_style('fasadmg-slick', get_template_directory_uri() . '/assets/css/slick.css', array(), _S_VERSION);
     wp_style_add_data('fasadmg-style', 'rtl', 'replace');
 
+    wp_deregister_script('jquery');
+    wp_register_script('jquery', ( 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'), false, null, true);
+    wp_enqueue_script('jquery');
+
     wp_enqueue_script('fasadmg-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
+    wp_enqueue_script('fasadmg-slick', get_template_directory_uri() . '/assets/js/slick.min.js', array('jquery'), _S_VERSION, true);
+    wp_enqueue_script('fasadmg-script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), _S_VERSION, true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');

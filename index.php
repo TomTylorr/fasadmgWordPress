@@ -25,12 +25,23 @@ get_header();
                     <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/category/steklo.jpg" alt="Стёкла" width="380" height="207">
                 </a>
             </li>
-            <li class="category__item slider  category__item--height">
-                <a href="#">
-                    <h3 class="visually-hidden">Слайдер</h3>
-                    <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider.jpg" alt="Слайдер" width="775" height="385">
-                </a>
+
+            <li class="category__item carousel  category__item--height">
+                    <a href="#" class="carousel__inner">
+                        <h3 class="visually-hidden">Слайдер</h3>
+                        <div>
+                            <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider.jpg" alt="Слайдер" width="775" height="385">
+                        </div>
+                        <div>
+                            <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider2.jpg" alt="Слайдер" width="775" height="385">
+                        </div>
+                        <div>
+                            <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider3.jpg" alt="Слайдер" width="775" height="385">
+                        </div>
+
+                    </a>
             </li>
+
             <li class="category__item category__item--height">
                 <a href="<?php echo $category_link_elements; ?>">
                     <h3 class="category__item__title">Элементы</h3>
@@ -71,7 +82,7 @@ get_header();
                 <li class="new-product__item">
                     <a class = "new-product__link" href = "<?php the_permalink(); ?>">
                         <div class = "new-product__img--container">
-    <?php the_post_thumbnail('medium', array('class' => 'new-product__img')); ?>
+                            <?php the_post_thumbnail('medium', array('class' => 'new-product__img')); ?>
                         </div>
                         <h3 class = "new-product__title-product"><?php the_title(); ?>
                         </h3>
@@ -81,7 +92,7 @@ get_header();
             ?>
 
         </ul>
-<?php wp_reset_postdata(); // сброс   ?>
+        <?php wp_reset_postdata(); // сброс   ?>
     </section>
     
     <section class="news">
@@ -113,21 +124,21 @@ get_header();
                 <li class="news__item">
                     <div class="news__item__img--container">
                         <a class="news__item__img_link" href = "http://fasadmgwordpress/novosty/">
-    <?php the_post_thumbnail('medium', array('class' => 'news__item__img')); ?>
-                            </a >
+                            <?php the_post_thumbnail('medium', array('class' => 'news__item__img')); ?>
+                        </a >
                     </div>
-                            <time datetime="2020-09-23" class="news__item__time"><?php the_time( "j F Y" ); ?></time>
-                            <a class="news__item__link" href="http://fasadmgwordpress/novosty/">
-                                <h3 class="news__item__title"><?php the_title();?></h3>
-                            </a>
-                        
+                    <time datetime="2020-09-23" class="news__item__time"><?php the_time("j F Y"); ?></time>
+                    <a class="news__item__link" href="http://fasadmgwordpress/novosty/">
+                        <h3 class="news__item__title"><?php the_title(); ?></h3>
+                    </a>
+
                     </div>
                 </li>  
-<?php }
-?>
+            <?php }
+            ?>
 
         </ul>
-<?php wp_reset_postdata(); // сброс   ?>
+        <?php wp_reset_postdata(); // сброс   ?>
 
     </section>
 </main>
