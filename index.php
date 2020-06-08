@@ -2,7 +2,6 @@
 get_header();
 ?>
 <main class="container">
-
     <section class="category">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="category">

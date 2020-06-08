@@ -1045,3 +1045,108 @@ ul {
 .card-page__link:hover {
     opacity: 0.8;
 }
+
+/*Модальное окно*/
+.modal {
+    display: none;  /*Hidden by default*/ 
+    position:fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-order {
+    position:fixed;
+    width: 570px;
+    border: 1px solid black;
+    height: 525px; 
+    background-color: white;
+    left:50%;
+    top: 50%;
+    margin-left: -285px;
+    margin-top:-262px;
+    
+
+}
+
+.modal-order__main {
+    display: flex;
+
+}
+
+.modal-order__title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.modal-order__description {
+    font-size: 14px;
+    text-align: center;
+    color: green;
+    font-weight:bold;
+}
+
+.modal-order__left {
+    display: flex;
+    width: 275px;
+    justify-content: center;
+}
+
+.modal-order__img {
+    max-height: 400px;
+    max-width: 265px;
+    align-self: center;
+}
+
+.modal-order__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-order__form p {
+    display: inline-block;
+    font-size: 16px;
+    width: 90px;
+    font-weight: bold;
+}
+
+.modal-order__textarea {
+    height: 100px;
+    width: 141px;
+}
+
+.modal-order__button {
+    background-color: #ee3643;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.modal-order__button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.modal-order__star {
+    color: red;
+}
+
+.modal-order__close {
+    position: absolute;
+    right: 0;
+    top:0;
+    cursor: pointer;
+}
+
+.modal-order__close:before {
+    content:"";
+    background-image: url('');
+    repeat: no-repeat;
+}
+

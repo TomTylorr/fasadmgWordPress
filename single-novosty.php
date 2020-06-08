@@ -8,9 +8,9 @@ get_header();
 <main class="container">
     <section class="news-page">
         <header class="news__header">
-            <h2 class="news__title news__title--position"><?php the_title();?></h2>
+            <h2 class="news__title news__title--position"><?php the_title(); ?></h2>
         </header>
-        
+
         <?php
 // параметры по умолчанию
         $posts = get_posts(array(
@@ -52,13 +52,13 @@ get_header();
                         </div>
                     </div>
                 </li> 
-                
+
             <?php }
             ?>
-<?php the_posts_pagination(); ?>
+            <?php the_posts_pagination(); ?>
         </ul>
         <?php wp_reset_postdata(); // сброс   ?>
-        
+
     </section>
 
 </main>
