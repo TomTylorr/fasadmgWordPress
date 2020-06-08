@@ -98,7 +98,7 @@ get_header();
     <section class="news">
         <header class="news__header">
             <h2 class="news__title">Новости:</h2>
-            <a class="news__header__link" href="http://fasadmgwordpress/novosty/">Все новости</a>
+            <a class="news__header__link" href="http://fasad-mg.by/novosty/">Все новости</a>
         </header>
         <?php
 // параметры по умолчанию
@@ -123,12 +123,12 @@ get_header();
                 ?>
                 <li class="news__item">
                     <div class="news__item__img--container">
-                        <a class="news__item__img_link" href = "http://fasadmgwordpress/novosty/">
+                        <a class="news__item__img_link" href = "http://fasad-mg.by/novosty/">
                             <?php the_post_thumbnail('medium', array('class' => 'news__item__img')); ?>
                         </a >
                     </div>
                     <time datetime="2020-09-23" class="news__item__time"><?php the_time("j F Y"); ?></time>
-                    <a class="news__item__link" href="http://fasadmgwordpress/novosty/">
+                    <a class="news__item__link" href="http://fasad-mg.by/novosty/">
                         <h3 class="news__item__title"><?php the_title(); ?></h3>
                     </a>
 
