@@ -170,7 +170,7 @@ function fasadmg_scripts() {
     wp_style_add_data('fasadmg-style', 'rtl', 'replace');
 
     wp_deregister_script('jquery');
-    wp_register_script('jquery', ( 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'), false, null, true);
+    wp_register_script('jquery', ( get_template_directory_uri() . '/assets/js/jquery-3.5.1.min.js'), false, null, true);
     wp_enqueue_script('jquery');
 
     wp_enqueue_script('fasadmg-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
