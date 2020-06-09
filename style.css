@@ -51,6 +51,7 @@ ul {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    background-color: #f2f6f8;
 }
 
 .site-description {
@@ -88,6 +89,98 @@ ul {
 .main-header__button__link:active {
     background-color: #f2f6f8;
     cursor: pointer;
+}
+
+/*Модально окно - обратный званок*/
+.main-modal-bg {
+    display: none;  /*Hidden by default*/ 
+    position:fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */    
+}
+
+.main-modal {
+    position: fixed;
+    left:50%;
+    top: 50%;
+    margin-left: -215px;
+    margin-top:-180px;
+    width: 430px;
+    height:380px;
+    background-color: #f2f6f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-modal__input {
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid #526481;
+}
+
+.main-modal__input:active,
+.main-modal__input:focus,
+.main-modal__input:hover
+{
+    border: 2px solid #526481;
+}
+
+.main-modal__name {
+    text-align: center;
+}
+
+.main-modal__phone {
+    text-align:center;
+}
+.main-modal__title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.main-modal__description {
+    font-size: 14px;
+    color: green;
+    text-align: center;
+}
+
+
+.main-modal__button {
+    display: block;
+    margin-top: 40px;
+    padding: 10px 25px;
+    background-color: #ee3643;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.main-modal__button:hover {
+    background-color: red;
+}
+
+.main-modal__close {
+    position:absolute;
+    right:0;
+    top:0;
+    background: url('assets/img/icons/close_mini.png') no-repeat top;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: 0;
+}
+
+.main-modal__close:hover {
+    background: url('assets/img/icons/close_mini_white.png') no-repeat top;
+    width: 32px;
+    height: 32px;
+    background-color: red;
 }
 
 .main-header-middle {
@@ -537,6 +630,7 @@ ul {
     width: 1170px;
     margin: 0 auto;
     padding-top: 40px;
+    background-color: #526481;
 }
 
 .footer-logo {
@@ -1063,14 +1157,13 @@ ul {
 .modal-order {
     position:fixed;
     width: 570px;
-    border: 1px solid black;
     height: 525px; 
-    background-color: white;
+    background-color: #f2f6f8;
     left:50%;
     top: 50%;
     margin-left: -285px;
     margin-top:-262px;
-    
+
 
 }
 
@@ -1118,6 +1211,7 @@ ul {
 .modal-order__textarea {
     height: 100px;
     width: 141px;
+    resize: none;
 }
 
 .modal-order__button {
@@ -1138,15 +1232,22 @@ ul {
 }
 
 .modal-order__close {
-    position: absolute;
-    right: 0;
+    position:absolute;
+    right:0;
     top:0;
+    background: url('assets/img/icons/close_mini.png') no-repeat top;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
+    border: 0;
 }
 
-.modal-order__close:before {
-    content:"";
-    background-image: url('');
-    repeat: no-repeat;
+.modal-order__close:hover {
+    background: url('assets/img/icons/close_mini_white.png') no-repeat top;
+    width: 32px;
+    height: 32px;
+    background-color: red;
 }
+
+
 

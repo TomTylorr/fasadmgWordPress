@@ -53,24 +53,24 @@ get_header();
 
     <div class="modal" id="modal">
         <section class="modal-order">
-            <div class="modal-order__top">
-                <h2 class="modal-order__title"><?php the_title(); ?></h2>
-                <p class="modal-order__description">Отправьте заявку на товар и наш менеджер обязательно свяжеться с Вами !</p>
-            </div>
+                <div class="modal-order__top">
+                    <h2 class="modal-order__title"><?php the_title(); ?></h2>
+                    <p class="modal-order__description">Отправьте заявку на товар и наш менеджер обязательно свяжеться с Вами !</p>
+                </div>
             <div class="modal-order__main">
                 <div class="modal-order__left">
                     <?php the_post_thumbnail('large', array('class' => 'modal-order__img')); ?>
                 </div>
 
                 <form class="modal-order__form" action="action_page.php">
-                    <label for="name"><p>Имя:<span class="modal-order__star">*</span></p><input type="text" id="name" name="name" ></label>                
-                    <label for="phone"><p>Телефон:<span class="modal-order__star">*</span></p><input type="text" class="input-text" id="phone" name="callback_tel" value="" ></label>               
-                    <label for="email"><p>Email:</p><input type="text" name="email" id="email" class="" value="" ></label>              
-                    <label for="subject"><p>Сообщение:</p><textarea class="modal-order__textarea" id="subject" name="subject" placeholder=""></textarea></label>     
+                    <label for="name"><p>Имя:<span class="modal-order__star">*</span></p><input class="main-modal__input" type="text" id="name" name="name" ></label>                
+                    <label for="phone"><p>Телефон:<span class="modal-order__star">*</span></p><input class="main-modal__input" type="text" class="input-text" id="phone" name="callback_tel" value="" ></label>               
+                    <label for="email"><p>Email:</p><input class="main-modal__input" type="text" name="email" id="email" class="" value="" ></label>              
+                    <label for="subject"><p>Сообщение:</p><textarea  class="modal-order__textarea main-modal__input" id="subject" name="subject" placeholder=""></textarea></label>     
                     <input class="modal-order__button" type="submit" value="Купить" name="send">
                 </form>
             </div>
-            <button class="modal-order__close" type="button" data-action="hide-banner" data-type="panel" title="Закрыть модальное окно">Закрыть</button>
+            <button class="modal-order__close" type="button" data-action="hide-banner" data-type="panel" title="Закрыть модальное окно"></button>
         </section>
     </div>
 

@@ -26,19 +26,19 @@ get_header();
             </li>
 
             <li class="category__item carousel  category__item--height">
-                    <a href="#" class="carousel__inner">
-                        <h3 class="visually-hidden">Слайдер</h3>
-                        <div>
-                            <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider.jpg" alt="Слайдер" width="775" height="385">
-                        </div>
-                        <div>
-                            <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider2.jpg" alt="Слайдер" width="775" height="385">
-                        </div>
-                        <div>
-                            <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider3.jpg" alt="Слайдер" width="775" height="385">
-                        </div>
+                <a href="#" class="carousel__inner">
+                    <h3 class="visually-hidden">Слайдер</h3>
+                    <div>
+                        <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider.jpg" alt="Слайдер" width="775" height="385">
+                    </div>
+                    <div>
+                        <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider2.jpg" alt="Слайдер" width="775" height="385">
+                    </div>
+                    <div>
+                        <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider3.jpg" alt="Слайдер" width="775" height="385">
+                    </div>
 
-                    </a>
+                </a>
             </li>
 
             <li class="category__item category__item--height">
@@ -93,7 +93,7 @@ get_header();
         </ul>
         <?php wp_reset_postdata(); // сброс   ?>
     </section>
-    
+
     <section class="news">
         <header class="news__header">
             <h2 class="news__title">Новости:</h2>
@@ -140,6 +140,7 @@ get_header();
         <?php wp_reset_postdata(); // сброс   ?>
 
     </section>
+
 </main>
 <?php
 //get_sidebar();
