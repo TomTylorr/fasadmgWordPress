@@ -13,9 +13,16 @@
     <body>
         <?php wp_body_open(); ?>  
         <div class="bg">
-            <header class="main-header">
+            <header class="main-header" id="main-header">
 
                 <div class="main-header-top">
+                    <a href="#" id="main-header-middle-button" class="main-header-middle-button">
+                        <div class="main-header-middle-button-div"></div>
+                        <div class="main-header-middle-button-div" ></div>
+                        <div class="main-header-middle-button-div"></div>
+                        <div class="main-header-middle-button-div"></div>
+                    </a>
+
                     <h1 class="site-description"><?php bloginfo('name'); ?></h1>
                     <div class="main-header__button"><button id="main-header__button__link" class="main-header__button__link" type="button">Заказать звонок</button></div>
                 </div>
@@ -55,27 +62,64 @@
                     </ul>
 
                 </div>
+                <div class="modal-menu-container" id="modal-menu-container">
+                    <?php
+                    wp_nav_menu([
+                        'theme_location' => 'main_header_menu',
+                        'menu' => '',
+                        'container' => 'nav',
+                        'container_class' => 'main-header-middle',
+                        'container_id' => 'main-header-middle',
+                        'menu_class' => 'nav-site',
+                        'walker' => new Main_Header_Menu(),
+                    ]);
+                    ?>
 
-                <?php
-                wp_nav_menu([
-                    'theme_location' => 'main_header_menu',
-                    'menu' => '',
-                    'container' => 'nav',
-                    'container_class' => 'main-header-middle',
-                    'container_id' => '',
-                    'menu_class' => 'nav-site',
-                    'walker' => new Main_Header_Menu(),
-                ]);
-                ?>
+                    <script>
+                        var menuModal = document.getElementById("modal-menu-container");
+
+                        // Get the button that opens the modal
+                        var menuBtn = document.getElementById("main-header-middle-button");
+
+                        // Get the <span> element that closes the modal
+                        var mainClose = document.getElementsByClassName("main-modal__close")[0];
+
+                        // When the user clicks the button, open the modal 
+                        menuBtn.onclick = function () {
+                            menuModal.style.display = "block";
+                        }
+
+                        // When the user clicks on <span> (x), close the modal
+                        mainClose.onclick = function () {
+                            menuModal.style.display = "none";
+                        }
+
+    //                    var searchModal = document.getElementById("main-header-bottom");
+
+                        // Get the button that opens the modal
+    //                    var menuBtn = document.getElementById("main-header-middle-button");
+
+                        // Get the <span> element that closes the modal
+                        var mainClose = document.getElementsByClassName("main-modal__close")[0];
+
+                        // When the user clicks the button, open the modal 
+    //                    menuBtn.onclick = function () {
+    //                        searchModal.style.display = "block";
+    //                    }
+
+                        // When the user clicks on <span> (x), close the modal
+                        mainClose.onclick = function () {
+                            searchModal.style.display = "none";
+                        }
+
+                    </script>
 
 
-                <div class="main-header-bottom">
-<!--                    <input class="search" type="text" placeholder="Я ищу ..."> 
-                    <a class="search-icon" href="#">
-                        <h3 class="visually-hidden">Искать</h3>
-                    </a>-->
-                    <?php get_search_form(); ?>
+                    <div class="main-header-bottom" id="main-header-bottom">
+                        <?php get_search_form(); ?>
+                    </div>
                 </div>
+
 
             </header>
         </div>
@@ -101,23 +145,23 @@
         <script>
             var mainModal = document.getElementById('main-modal-bg');
 
-    // Get the button that opens the modal
+            // Get the button that opens the modal
             var mainBtn = document.getElementById("main-header__button__link");
 
-    // Get the <span> element that closes the modal
+            // Get the <span> element that closes the modal
             var mainClose = document.getElementsByClassName("main-modal__close")[0];
 
-    // When the user clicks the button, open the modal 
+            // When the user clicks the button, open the modal 
             mainBtn.onclick = function () {
                 mainModal.style.display = "block";
             }
 
-    // When the user clicks on <span> (x), close the modal
+            // When the user clicks on <span> (x), close the modal
             mainClose.onclick = function () {
                 mainModal.style.display = "none";
             }
 
-    // When the user clicks anywhere outside of the modal, close it
+            // When the user clicks anywhere outside of the modal, close it
             window.onclick = function (event) {
                 if (event.target == mainModal) {
                     mainModal.style.display = "none";

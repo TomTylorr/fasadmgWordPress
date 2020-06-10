@@ -37,7 +37,7 @@
 
 
             <ul class="social-networks">
-                <li class="social-networks__item">
+                <li class="social-networks__item social-networks-first">
                     <a class="social-networks__vk" href="#">
                         <p class="visually-hidden">Вконтакте</p>
                     </a>

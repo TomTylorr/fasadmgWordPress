@@ -69,7 +69,7 @@ if (!function_exists('fasadmg_setup')) :
                 array(
                     'main_header_menu' => esc_html__('Меню в шапке', 'fasadmg'),
                     'main_footer_menu' => esc_html__('Меню в подвале', 'fasadmg'),
-                    'category_footer_menu' => esc_html__('Меню категории в подвале', 'fasadmg'),
+                    'category_footer_menu' => esc_html__('Меню категории в подвале', 'fasadmg')
                 )
         );
 

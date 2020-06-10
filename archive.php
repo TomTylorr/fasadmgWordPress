@@ -45,6 +45,7 @@ get_header();
             <?php the_posts_pagination(); ?>
         </section>
     </div>
+    
 </main>
 
 <?php

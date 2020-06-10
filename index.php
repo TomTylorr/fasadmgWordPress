@@ -4,7 +4,7 @@ get_header();
 <main class="container">
     <section class="category">
         <h2 class="visually-hidden">Категории товаров</h2>
-        <ul class="category">
+        <ul class="category-lists">
             <li class="category__item">
                 <a class="category__link" href="<?php echo $category_link_frezerovky; ?>"">
                     <h3 class="category__item__title">Фрезеровки</h3>
@@ -29,13 +29,13 @@ get_header();
                 <a href="#" class="carousel__inner">
                     <h3 class="visually-hidden">Слайдер</h3>
                     <div>
-                        <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider.jpg" alt="Слайдер" width="775" height="385">
+                        <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider.jpg" alt="Слайдер" >
                     </div>
                     <div>
-                        <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider2.jpg" alt="Слайдер" width="775" height="385">
+                        <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider2.jpg" alt="Слайдер">
                     </div>
                     <div>
-                        <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider3.jpg" alt="Слайдер" width="775" height="385">
+                        <img class="category__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/slider3.jpg" alt="Слайдер">
                     </div>
 
                 </a>

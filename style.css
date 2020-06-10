@@ -18,6 +18,12 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/*@media (max-width: 768px) {
+    body {
+        width: auto;
+    }
+}*/
+
 ul {
     padding-left: 0;
     list-style: none;
@@ -52,6 +58,14 @@ ul {
     display: flex;
     flex-direction: column;
     background-color: #f2f6f8;
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        height: 300px;
+        width: auto;
+
+    }
 }
 
 .site-description {
@@ -120,7 +134,6 @@ ul {
 }
 
 .main-modal__input {
-    margin-left: 5px;
     padding: 5px;
     border: 1px solid #526481;
 }
@@ -187,6 +200,28 @@ ul {
     background-color: #526481;
 }
 
+@media (max-width: 768px) {
+
+}
+
+.main-header-middle-button {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .main-header-middle-button {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+.main-header-middle-button-div {
+    width: 47px;
+    height: 6px;
+    background-color: black;
+    margin-bottom: 3px;
+}
+
 .nav-site {
     list-style: none;
     display: flex;
@@ -222,6 +257,10 @@ ul {
     display: flex;
 }
 
+@media (max-width: 768px) {
+    padding: 0 66px;
+}
+
 .logo {
     width: 308px;
 }
@@ -250,6 +289,13 @@ ul {
 .main-header-middle {
     display: flex;
 }
+
+@media (max-width: 768px) {
+    .main-header-middle {
+        padding: 0 66px;
+    }
+}
+
 
 .main-header-bottom {
     display: flex;
@@ -331,16 +377,6 @@ ul {
     cursor: pointer;
 }
 
-/*.search-icon::before {
-    content: "";
-    background-image: url("assets/img/icons/search.svg");
-    position: absolute;
-    right: 190px;
-    top: 35px;
-    width: 28px;
-    height: 28px;
-    background-repeat: no-repeat;
-}*/
 
 /* Закончились стили шапки */
 
@@ -354,11 +390,15 @@ ul {
 /* Стили 1 блога категорий и слайдера */
 
 .category {
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.category-lists {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 40px;
-    margin-top: 30px;
+
 }
 
 .category__item {
@@ -716,7 +756,6 @@ ul {
     background-image: url("assets/img/icons/facebook.svg");
     background-repeat: no-repeat;
     width: 17px;
-    left: 245px;
     height: 30px;
 }
 
@@ -1250,4 +1289,265 @@ ul {
 }
 
 
+/*Страница 404*/
+.page-404-content__title {
+    text-align: center;
+    font-size:24px;
+}
+.page-404 {
+    width: 1177px;
+    margin: 0 auto;
+    min-height: 600px;
+}
 
+.page-404-content {
+    margin-top: 50px;
+}
+
+.page-404-content__number {
+    font-size: 300px;
+    text-align: center;
+    margin:0;
+    text-shadow: 1px 1px 2px #526481, 0 0 1em #526481;
+    color: white;
+}
+
+.page-404-content__text {
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.page-404-content__link {
+
+}
+
+
+@media (max-width:768px) {
+
+    /*Header*/
+
+    .modal-menu-container {
+        display: none;
+        position:fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: #526481;
+    }
+
+    .nav-site {
+        display: block;
+        width:100%;
+        margin-top: 50px;
+    }
+
+    .search {
+        width: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    .searchsubmit {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .searchform{
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+
+
+    .search-form {
+        position:fixed;
+        left:0;
+        top:0;
+        width: 100%;
+        background-color: #526481;
+        z-index: 1000;
+        height: 100%;
+        display: block;
+    }
+
+    .main-header-top {
+        padding: 0 66px;
+        flex-wrap: wrap;
+    }
+
+    .main-header-top2 {
+        flex-wrap: wrap;
+        padding: 0 66px;
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+    }
+
+    .logo__image {
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    .header-info {
+        margin: 0 auto;
+    }
+
+    .site-description {
+        padding-left:0;
+        text-align: center;
+    }
+
+    .main-header__button {
+        margin: 0 auto;
+
+    }
+
+    .header-user-block {
+        display: none;
+    }
+    /*Конец Header*/
+
+    /*Блок категорий контента*/
+    .container {
+        width: auto;
+    }
+
+    .category {
+        margin-top: 0;
+    }
+
+    .carousel {
+        order: -1;
+        width: 100%;
+        height:auto;
+        max-width: 632px !important;
+        margin-bottom: 20px !important;
+
+    }
+
+
+
+    .category__item {
+
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .category__item--height {
+        height: auto;
+    }
+
+    .category__img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*Блок новинок*/
+
+    .new-product {
+        margin-bottom: 20px;
+    }
+
+    .new-product__items {
+        flex-wrap: wrap;
+    }
+
+    .new-product__item {
+        margin-bottom: 40px;
+    }
+
+    .new-product__title {
+        padding-right: 20px;
+    }
+
+    .news__title {
+        padding-right: 20px;
+    }
+
+    .main-modal {
+        width: 320px;
+        margin-left: -160px;
+        height: 410px;
+
+    }
+
+    .footer-navigation {
+        order: 3;
+        width: 100%;
+    }
+
+    .footer-top {
+        width: auto;
+        flex-wrap: wrap;
+        padding: 0 68px;
+    }
+
+    .logo__image {
+        padding-left: 0;
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .footer-feedback {
+        margin: 0 auto;
+    }
+
+    .footer-container {
+        width: auto;
+        padding: 0 68px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .registration {
+        order:3;
+    }
+
+    .right-reserved {
+        width: auto;
+    }
+
+    .developed-by {
+        width: auto;
+    }
+
+    .new-product__title-product {
+        margin: 0;
+    }
+
+    .social-networks__facebook {
+        padding-left: 8px;
+    }
+
+    .social-networks-first{
+        padding-left: 40px;
+    }
+
+    .site-navigation-main-bottom {
+        display: block;
+        flex-wrap: nowrap;
+    }
+
+    .site-navigation-main-bottom__item {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .main-header-middle-button:hover,
+    .main-header-middle-button:active{
+        opacity: 0.6;
+    }
+
+
+}
