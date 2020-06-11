@@ -37,7 +37,7 @@ get_header();
     <div class="contact-page__main-container contact-page__main-container--margin">
         <section class="contacts-page__map">
             <h3 class="visually-hidden">Карта расположения офиса</h3>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contacts/map.jpg" alt="Гродненская область, город Лида, 
+            <img class="contacts-page__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/contacts/map.jpg" alt="Гродненская область, город Лида, 
                  улица Химиков, дом 6, офис 9">
         </section>
         <section class="contacts-page__reequisites">
