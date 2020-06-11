@@ -927,7 +927,6 @@ ul {
     width: 100%;
     margin-top: 70px;
     margin-bottom: 70px;
-    border: 2px solid black;
 }
 
 .about-us__data {
@@ -1635,110 +1634,129 @@ ul {
     .news-page {
         margin-top: 0;
     }
-    
+
     .news-page__item {
         display: flex;
         flex-wrap: wrap;
         max-height:100%;
     }
-    
+
     .news-page__container:first-child {
         margin: 0 auto;
     }
-    
+
     .new-page__photo {
         width:100%;
     }
-    
+
     .news-page__container {
         padding: 0 66px;
     }
-    
+
     .news-page__container-photo {
         min-width:auto;
     }
-    
+
     .news-page__container-photo {
         height:auto;
     }
-    
+
     .news-page__more-link {
         position: static;
         margin-left:20px;
     }
-    
+
     .text-wrapper {
         max-height:100%;
     }
-    
+
     .news-page_line {
         display: none;
     }
-    
+
     .news__title news__title--position {
         padding-right:0;
         padding-left:0;
     }
-    
+
     .contacts-page__img{
         width: 100%;
     }
-    
+
     .news-page {
         margin-top:25px;
     }
-    
+
     .catalog-page__filter {
         width: auto;
         heigth: auto;
     }
-    
+
     .catalog-page__filter {
         display: none;
     }
-    
+
     /*Карточка товаров*/
     .card-page {
         flex-wrap: wrap;
         width: auto;
     }
-    
+
     .card-page__container-img {
         width: 100%;
     }
-    
+
     .modal-order {
-        width: auto;
+        width:100%;
         height: auto;
         left: auto;
         top: 0;
         margin-left: auto;
         margin-top: auto;
     }
-    
+
+    .modal-order__main {
+        justify-content: space-around;
+    }
+
     .modal-order__left {
         margin-right: auto;
-        widht: auto;
+
     }
-    
+
     .modal-order__form {
         margin-right: 10px;
-        
+
     }
-    
+
+    .modal-order__img {
+        width: 100%;
+        height: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
     .modal-order__textarea {
         width: auto;
     }
-    
+
     .card-page__container-img {
         min-width: auto;
     }
-    
+
     .modal-order__top {
         padding: 0 10px;
     }
-    
-    
+
+    .about-us__table {
+        padding: 0 10px;
+    }
+
+    .about-us__advantages-items {
+        padding: 0 10px;
+        text-align: center;
+    }
+
 }
 
 
