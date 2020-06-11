@@ -33,8 +33,11 @@
                         <img class="logo__image" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" width="169" height="84" alt="Логотип ООО 'Монте-групп'">
                     </a>    
                     <div class="header-info">
-                        <p class="header-info__working-hours"><span class="bg--yellow">Время работы: 9.00 - 18.00</span></p>
-                        <p class="header-info__number">+375 (44) 794-71-24</p>
+                        <p class="header-info__working-hours"><span class="bg--yellow">Время работы: 8.00 - 16.30</span></p>
+                        <p class="header-info__number">
+                            +375 (29) 339-99-04 
+                            
+                        </p>
                     </div>
 
 
@@ -63,7 +66,7 @@
 
                 </div>
                 <div class="modal-menu-container" id="modal-menu-container">
-                    
+
                     <a class="modal-menu__close" id="modal-menu__close" href="#"><span class="modal-menu__close-img"></span></a>
                     <?php
                     wp_nav_menu([
@@ -79,7 +82,7 @@
 
                     <script>
                         var modalMenuClose = document.getElementById("modal-menu__close");
-                        
+
                         var menuModal = document.getElementById("modal-menu-container");
 
                         // Get the button that opens the modal

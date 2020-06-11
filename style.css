@@ -760,6 +760,7 @@ ul {
     background-repeat: no-repeat;
     width: 17px;
     height: 30px;
+    
 }
 
 .social-networks__instagramm::before {
@@ -1340,7 +1341,7 @@ ul {
         height: 100%; /* Full height */
         overflow: auto; /* Enable scroll if needed */
         background-color: #526481;
-        
+
     }
 
     .nav-site {
@@ -1355,6 +1356,7 @@ ul {
         margin-bottom: 20px;
         margin-top: 40px;
         margin-right: 10px;
+        padding-left: 0;
     }
 
     .search-icon {
@@ -1410,6 +1412,10 @@ ul {
 
     .modal-menu__close-img:hover {
         background-color: #ee3643;
+    }
+
+    .main-header {
+        height: auto;
     }
 
     .main-header-top {
@@ -1562,6 +1568,15 @@ ul {
         margin: 0;
     }
 
+    .social-networks {
+        justify-content:stretch;
+    }
+    
+    .social-networks-first {
+        padding-left:0;
+    }
+    
+    
     .social-networks__facebook {
         padding-left: 8px;
     }
@@ -1586,5 +1601,22 @@ ul {
         opacity: 0.6;
     }
 
+    .new-product__header__link {
+        padding-right: 5px;
+        padding-left: 5px;
+        margin-right:0;
+    }
+    
+    .news__header__link {
+        margin-right: 0;
+    }
 
+
+}
+
+@media (min-width:480px) {
+    .social-networks {
+        justify-content: center;
+    }
+    
 }
