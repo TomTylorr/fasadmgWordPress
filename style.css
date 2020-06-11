@@ -165,8 +165,9 @@ ul {
 
 
 .main-modal__button {
+    margin: 0 auto;
     display: block;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 10px 25px;
     background-color: #ee3643;
     cursor: pointer;
@@ -200,12 +201,14 @@ ul {
     background-color: #526481;
 }
 
-@media (max-width: 768px) {
-
-}
 
 .main-header-middle-button {
     display: none;
+}
+
+.modal-menu__close {
+    display: none;
+
 }
 
 @media (max-width:768px) {
@@ -1249,7 +1252,7 @@ ul {
 
 .modal-order__textarea {
     height: 100px;
-    width: 141px;
+    width: 166px;
     resize: none;
 }
 
@@ -1337,6 +1340,7 @@ ul {
         height: 100%; /* Full height */
         overflow: auto; /* Enable scroll if needed */
         background-color: #526481;
+        
     }
 
     .nav-site {
@@ -1350,6 +1354,14 @@ ul {
         margin: 0 auto;
         margin-bottom: 20px;
         margin-top: 40px;
+        margin-right: 10px;
+    }
+
+    .search-icon {
+        align-self: center;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .searchsubmit {
@@ -1373,6 +1385,31 @@ ul {
         z-index: 1000;
         height: 100%;
         display: block;
+    }
+
+    .modal-menu__close {
+        display: block;
+        position:relative;
+        margin-top: 50px;
+        padding-bottom: 40px;
+
+    }
+
+
+    .modal-menu__close-img {
+        position:absolute;
+        right:20px;
+        top:0; 
+        background: url('assets/img/icons/close_mini2.png') no-repeat top;
+        width: 64px;
+        height: 64px;
+        cursor: pointer;
+        border: 0;
+        background-color: white;
+    }
+
+    .modal-menu__close-img:hover {
+        background-color: #ee3643;
     }
 
     .main-header-top {

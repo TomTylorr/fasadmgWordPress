@@ -63,6 +63,8 @@
 
                 </div>
                 <div class="modal-menu-container" id="modal-menu-container">
+                    
+                    <a class="modal-menu__close" id="modal-menu__close" href="#"><span class="modal-menu__close-img"></span></a>
                     <?php
                     wp_nav_menu([
                         'theme_location' => 'main_header_menu',
@@ -76,6 +78,8 @@
                     ?>
 
                     <script>
+                        var modalMenuClose = document.getElementById("modal-menu__close");
+                        
                         var menuModal = document.getElementById("modal-menu-container");
 
                         // Get the button that opens the modal
@@ -90,22 +94,13 @@
                         }
 
                         // When the user clicks on <span> (x), close the modal
-                        mainClose.onclick = function () {
+                        modalMenuClose.onclick = function () {
                             menuModal.style.display = "none";
                         }
-
-    //                    var searchModal = document.getElementById("main-header-bottom");
-
-                        // Get the button that opens the modal
-    //                    var menuBtn = document.getElementById("main-header-middle-button");
 
                         // Get the <span> element that closes the modal
                         var mainClose = document.getElementsByClassName("main-modal__close")[0];
 
-                        // When the user clicks the button, open the modal 
-    //                    menuBtn.onclick = function () {
-    //                        searchModal.style.display = "block";
-    //                    }
 
                         // When the user clicks on <span> (x), close the modal
                         mainClose.onclick = function () {
