@@ -1024,10 +1024,9 @@ ul {
 }
 
 .catalog-page__item {
-    width: 265px;
-    height: 250px;
     margin: 0 auto;
     margin-bottom: 40px;
+    width: 280px;
 }
 
 .catalog-page__filter__title {
@@ -1061,14 +1060,15 @@ ul {
 
 .catalog-page__link {
     display: flex;
-    position: relative;
     min-height: 250px;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .catalog-page__img {
-    max-height: 250px;
-    max-width: 265px;
     margin: 0 auto;
+
 }
 
 .catalog-page__img:hover {
@@ -1076,8 +1076,7 @@ ul {
 }
 
 .catalog-page__title {
-    position: absolute;
-    bottom: 0;
+
     text-align: center;
     width: 100%;
     background-color: #f9f5f0;
