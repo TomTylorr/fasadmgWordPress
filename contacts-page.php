@@ -14,22 +14,22 @@ get_header();
             <div class="contacts-page__container">
                 <h3 class="contacts-page__title">АДРЕС:</h3>
                 <p class="contacts-page__text">
-                    Гродненская область, город Лида, <br>
-                    улица Химиков, дом 6, офис 9
+                    РБ, Гродненская обл., Лидский р-н, <br>
+                    Третьяковский с/с, 66, д. Минойты
                 </p>
             </div>
             <div class="contacts-page__container">
                 <h3 class="contacts-page__title">Режим работы:</h3>
                 <p class="contacts-page__text">
                     Будние дни - с 8.00 до 16.30; <br>
-                    Перерыв - с 13.00 до 14.00; <br>
                     Выходные - суббота, воскресенье.
                 </p>
             </div>
             <div class="contacts-page__container">
                 <h3 class="contacts-page__title">Телефоны:</h3>
                 <p class="contacts-page__text">
-                    +375 (29) 3399904
+                    +375 (29) 3399904 <br>
+                    +375 (29) 6688556
                 </p>
             </div>
         </div>
@@ -47,7 +47,7 @@ get_header();
                 р/с BY70BELB30120167LZ0020226000 в евро
                 в ОАО «Банк БелВЭБ» г.Минск, БИК SWIFT: BELBBY2X, 
                 УНП 590960067
-                 </p>
+            </p>
         </section>
     </div>
 

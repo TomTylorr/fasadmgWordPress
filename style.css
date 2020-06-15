@@ -1436,6 +1436,7 @@ ul {
     .logo__image {
         margin: 0 auto;
         padding-left: 0;
+        padding-top: 15px;
     }
 
     .header-info {

@@ -3,7 +3,7 @@
     <div class="footer-top">
         <div class="footer-logo">
             <a class="logo" href="<?php echo home_url();?>">
-                <img class="logo__image" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" width="169" height="84" alt="Логотип ООО 'Монте-групп'">
+                <img class="logo__image" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_footer.png" width="203" height="73" alt="Логотип ООО 'Монте-групп'">
             </a>
         </div>
 

@@ -30,7 +30,7 @@
                 <div class="main-header-top2">
 
                     <a class="logo" href="<?php echo home_url(); ?>">
-                        <img class="logo__image" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" width="169" height="84" alt="Логотип ООО 'Монте-групп'">
+                        <img class="logo__image" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" width="203" height="73" alt="Логотип ООО 'Монте-групп'">
                     </a>    
                     <div class="header-info">
                         <p class="header-info__working-hours"><span class="bg--yellow">Время работы: 8.00 - 16.30</span></p>
