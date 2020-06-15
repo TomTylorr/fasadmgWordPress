@@ -1325,6 +1325,161 @@ ul {
 
 }
 
+@media (max-width:1170px) and (min-width:768px){
+    
+    .main-header {
+        height: auto;
+        width: auto;
+    }
+    .main-header-top {
+        justify-content: space-around;
+    }
+    
+    .site-description {
+        width: auto;
+        padding-left: 0;
+    }
+    
+    .main-header-top2 {
+        justify-content: space-around;
+    }
+    
+    .logo {
+        width: auto;
+        
+    }
+    
+    .header-info {
+        width: auto;
+    }
+    
+    .header-user-block {
+        flex-grow:0;
+    }
+    
+    .search {
+        width: auto;
+    }
+    
+    .carousel {
+        order: -1;
+    }
+    
+    .container {
+        width: auto;
+    }
+    
+    .category-lists {
+        justify-content: space-around;
+    }
+    
+    .new-product__items {
+        flex-wrap:wrap;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .new-product__item {
+        margin-right: 10px;
+    }
+    
+    .footer-container {
+        width: auto;
+    }
+    
+    .footer-top {
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .footer-logo {
+        width: auto;
+    }
+    
+    .footer-feedback {
+        width: auto;
+    }
+    
+    .logo__image {
+        padding-left: 0;
+    }
+    
+    .catalog-page-container {
+        padding-left: 20px;
+    }
+    
+    .catalog-page__items {
+        width: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .catalog-page__item {
+        width: 50%;
+        
+        
+    }
+    
+    .catalog-page__filter {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .right-reserved {
+        width: auto;
+        padding-right: 20px;
+    }
+    
+    .registration {
+        width: auto;
+        padding-right: 20px;
+    }
+    
+    .developed-by {
+        width: auto;
+        padding-right: 20px;
+    }
+    
+    .about-us__table {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .about-us__advantages-items {
+        text-align: center;
+    }
+    
+    .news-page__items {
+
+    }
+    
+    .news-page__item {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-height: 100%;
+        
+    }
+    
+    .news-page__container {
+        height: auto;
+    }
+    
+    .news-page__container:last-child {
+        flex-grow: 0;
+    }
+    
+    .news-page__more-link {
+        right: 0;
+        bottom: 0;
+    }
+    
+    .contact-page__main-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 
 @media (max-width:768px) {
 
@@ -1766,3 +1921,4 @@ ul {
     }
 
 }
+
